@@ -24,7 +24,7 @@ public class VubirRegimu extends JFrame {
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
-		JLabel l_Nazva = new JLabel("Літературні  хрестики  нулики");
+		JLabel l_Nazva = new JLabel("Мовні  хрестики  нулики");
 		l_Nazva.setFont(new Font("Times New Roman", Font.PLAIN, 39));
 		l_Nazva.setHorizontalAlignment(SwingConstants.CENTER);
 		l_Nazva.setBounds(12, 13, 570, 85);
@@ -44,10 +44,10 @@ public class VubirRegimu extends JFrame {
 				int i_menu = JOptionPane.showOptionDialog(null, "Оберіть стиль:", "Хрестики vs Нулики",
 						JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, null);
 				if (i_menu == 0) {
-					new Games("Хрестики vs Нулики", 1);
+					new Games("Хрестики vs Нулики", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					setVisible(false);
 				} else {
-					new Games("Хрестики vs Нулики", 0);
+					new Games("Хрестики vs Нулики", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					setVisible(false);
 				}
 			}
@@ -62,7 +62,7 @@ public class VubirRegimu extends JFrame {
 		l_DvaGravci.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				new Games("Хрестики vs Нулики", 2);
+				new Games("Хрестики vs Нулики", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 				setVisible(false);
 			}
 		});
